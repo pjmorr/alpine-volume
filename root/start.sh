@@ -5,7 +5,7 @@ SERVICE_GID=${SERVICE_GID:-"0"}
 SERVICE_VOLUME=${SERVICE_VOLUME:-"/opt/tools"}
 KEEP_ALIVE=${KEEP_ALIVE:-"0"}
 
-chown -R ${SERVICE_UID}:${SERVICE_GID} ${SERVICE_VOLUME}
+#chown -R ${SERVICE_UID}:${SERVICE_GID} ${SERVICE_VOLUME}
 touch ${SERVICE_VOLUME}/.synced
 
 echo `date` $ME - "${SERVICE_VOLUME} owned by uid:${SERVICE_UID} gid:${SERVICE_GID} exported ...."
